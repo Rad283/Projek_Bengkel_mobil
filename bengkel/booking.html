@@ -1,18 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Bengkel Mobil</title>
-    <link rel="icon" type="image/png" sizes="700x700" href="assets/img/pngwing.com.png">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab&amp;display=swap">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
-    <link rel="stylesheet" href="assets/css/Articles-Cards-images.css">
-    <link rel="stylesheet" href="assets/css/Navbar-Right-Links-Dark-icons.css">
+<html lang="id">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <title>Booking service</title>
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+        <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
     <div class="container-fluid text-dark text-bg-dark" style="margin-bottom: 16px;">
         <h2 class="text-center text-white text-bg-dark pt-xxl-2" style="margin-bottom: 3px;font-family: 'Roboto Slab', serif;font-weight: bold;">Bengkel Mobil&nbsp; Jaya</h2>
@@ -20,9 +15,9 @@
             <div class="container"><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-5"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse text-center" id="navcol-5">
                     <ul class="navbar-nav text-center me-auto">
-                        <li class="nav-item"><a class="nav-link" href="index.html" style="font-size: 18px;">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="produk.html">Produk &amp; Layanan</a></li>
-                        <li class="nav-item"><a class="nav-link active" href="booking.html">Booking</a></li>
+                        <li class="nav-item"><a class="nav-link" href="admin.html" style="font-size: 18px;">Home</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="produk.html">Produk &amp; Layanan</a></li>
+                        <li class="nav-item"><a class="nav-link" href="booking.html">Booking</a></li>
                         <li class="nav-item"><a class="nav-link" href="berita.html">Berita</a></li>
                         <li class="nav-item"><a class="nav-link" href="tentang.html">Tentang Kami</a></li>
                     </ul>
@@ -33,9 +28,73 @@
             </div>
         </nav>
     </div>
-    <div class="container">
-        <div class="card"></div>
-    </div>
+ 
+
+ <div class="container">
+    <fieldset>
+        <legend> 
+         <h4>Booking service</h4>
+         </legend>
+        <div>
+        <form >
+            <div>
+                <label class="col-sm-2 col-form-label">Jenis Kendaraan:</label>
+                    <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                      <option selected>Choose...</option>
+                      <option value="1">Mobil</option>
+                      <option value="2">truk</option>
+                      <option value="3">Bis mini</option>
+                    </select>
+            </div>
+                <br>
+            <div>
+                <label class="col-sm-2 col-form-label">Nama Pemesan :</label>
+                <input type="text" name="kendaraan">
+            </div>
+                <br>
+            <div>
+                <label class="col-sm-2 col-form-label">Kategori Peminjaman :</label>
+                <input type="radio" name="kendaraan"> Pribadi
+                <input type="radio" name="kendaraan"> Perusahhan/Organisasi
+            </div>
+                <br>
+            <div>
+                <label class="col-sm-2 col-form-label">Dekripsi Kebutuhan :</label>
+                <textarea name="Dekripsi" id="Dekripsi" cols="50" rows="5"></textarea>
+            </div>
+                <br>
+            <div>
+                <label class="col-sm-2 col-form-label">Jam, Tanggal  Service :</label>
+                <input type="datetime-local">
+            </div>
+                <br>
+            <div>
+                <label class="col-sm-2 col-form-label">Request Montir :</label>
+                <input type="text" name="montirname" id="name">
+            </div>
+                <br>
+            <div>
+                <label class="col-sm-2 col-form-label">Telpon/HP :</label>
+                <input type="number" name="telephone" id="telephone">
+            </div>
+                <br>
+            <div>
+                <label class="col-sm-2 col-form-label">Email :</label>
+                <input type="email" name="email" id="email">
+            </div>
+                <br>     
+            <div>
+                <input type="submit" name="submit" id="submit">
+                <input type="Reset" name="reset" id="reset">
+            </div>
+        </form>
+        </div>
+    </fieldset>
+
+ </div>
+
+
+
     <footer class="text-center bg-dark" style="margin-top: 28px;">
         <div class="container text-white py-4 py-lg-5">
             <p class="text-start text-white mb-0"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-cup-fill" style="margin-right: 6px;">
@@ -43,7 +102,6 @@
                 </svg>Develop By Mahasiswa STT- NF @2022</p>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 </body>
-
 </html>
